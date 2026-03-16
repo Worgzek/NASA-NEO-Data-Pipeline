@@ -46,8 +46,6 @@ Dự án cũng sử dụng Apache Airflow để tự động hóa pipeline và D
 Nguồn dữ liệu
 
 Dữ liệu được lấy từ:
->>>>>>> a3b1644bb9412bbc4658bfe3d522e76f6a70ae7e
-
 NASA Near Earth Object Web Service API
 
 https://api.nasa.gov/
