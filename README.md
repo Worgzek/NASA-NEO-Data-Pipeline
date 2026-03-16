@@ -62,7 +62,7 @@ API cung cấp thông tin về các tiểu hành tinh bay gần Trái Đất.
 API này cung cấp thông tin về các tiểu hành tinh đang bay gần Trái Đất.
 
 Cấu trúc project
->>>>>>> a3b1644bb9412bbc4658bfe3d522e76f6a70ae7e
+>>>>>>> 
 nasa_asteroid_ETL_Project
 │
 ├── dags/
@@ -98,7 +98,7 @@ Luồng dữ liệu (Pipeline)
 
 Pipeline xử lý dữ liệu theo thứ tự:
 
->>>>>>> a3b1644bb9412bbc4658bfe3d522e76f6a70ae7e
+>>>>>>> 
 NASA API
    ↓
 Extract dữ liệu JSON
@@ -111,7 +111,7 @@ Transform → CSV
 Flatten dữ liệu (JSON lồng nhau → dữ liệu phẳng)
    ↓
 Transform dữ liệu → CSV
->>>>>>> a3b1644bb9412bbc4658bfe3d522e76f6a70ae7e
+>>>>>>> 
    ↓
 Validate dữ liệu
    ↓
@@ -145,7 +145,7 @@ Khoảng cách tới Trái Đất
 
 Công thức:
 
->>>>>>> a3b1644bb9412bbc4658bfe3d522e76f6a70ae7e
+>>>>>>> 
 risk_score =
 (diameter_max_m / 1000) * 4
 + (velocity_km_s / 30) * 3
@@ -200,7 +200,7 @@ Loguru (logging)
 
 Các thư viện Python:
 
->>>>>>> a3b1644bb9412bbc4658bfe3d522e76f6a70ae7e
+>>>>>>> 
 psycopg2
 pandas
 requests
@@ -275,7 +275,7 @@ danger_score
 
 Ví dụ các cột dữ liệu:
 
->>>>>>> a3b1644bb9412bbc4658bfe3d522e76f6a70ae7e
+>>>>>>> 
 asteroid_id
 name
 diameter_max_m
