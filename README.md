@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # NASA Asteroid ETL Pipeline 🚀
 
 ## Giới thiệu
