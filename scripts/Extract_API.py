@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 from loguru import logger
 from dotenv import load_dotenv
 load_dotenv()
-
 API_KEY = os.getenv("NASA_API_KEY")
+# Import libraries
 
 run_date = sys.argv[1]
 LOG_FILE = f"/opt/airflow/logs/pipeline_{run_date}.log"
@@ -20,6 +20,7 @@ logger.add(
     level="INFO",
     format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
 )
+#Logging
 
 def extract_API(run_date):
     try:
