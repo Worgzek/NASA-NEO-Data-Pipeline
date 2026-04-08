@@ -47,7 +47,7 @@ def load_postgres(run_date):
                 diameter_max_m FLOAT,
                 velocity_km_s FLOAT,
                 miss_distance_km FLOAT,
-                date TIMESTAMP,
+                date date,
                 last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 PRIMARY KEY (asteroid_id, date))
             """)

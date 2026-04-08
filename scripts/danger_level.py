@@ -45,7 +45,7 @@ def danger_score(run_date):
                 miss_distance_km FLOAT,  
                 risk_score FLOAT,
                 danger_level VARCHAR(10),                            
-                date TIMESTAMP,
+                date date,
                 last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 primary key(asteroid_id, date)
                     )
@@ -85,11 +85,12 @@ def danger_score(run_date):
                     date
 
                 FROM Asteroids
+                WHERE date = %s
             ) as sub
 
             ORDER BY risk_score DESC;
             """
-        cur.execute(query)
+        cur.execute(query, (run_date,))
         results = cur.fetchall()
         logger.info("Load data vao bang danger_score")
         insert_query = """
