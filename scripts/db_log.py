@@ -41,6 +41,4 @@ def log_ETL(run_id, step, status, records_processed, message):
         if conn:
             conn.close()
         if cur:
-            cur.close()
-        logger.info('da dong ket noi')
-    
+            cur.close()    
