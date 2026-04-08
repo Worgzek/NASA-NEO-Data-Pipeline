@@ -80,7 +80,7 @@ def Transform(run_date):
             writer.writeheader()
             writer.writerows(rows)
         logger.success(f"Transform thanh cong {run_date}\n------------------------------------------------------")
-        log_ETL(run_date, "toCSV", "success", len(rows), f"da transform to CSV thanh cong")
+        log_ETL(run_date, "toCSV", "success", len(rows), f"da transform to CSV thanh cong {Output}")
 
 
     except Exception as e:
